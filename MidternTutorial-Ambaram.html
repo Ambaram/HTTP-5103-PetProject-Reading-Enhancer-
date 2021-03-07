@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="MidtermTutorial-Ambaram.css">
+        <title>Midterm Tutorial-Javascript lesson</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <h1>Javascript Objects</h1>
+        </header>
+        <!-- Main Content -->
+        <main class="main">
+            <div class="content-wrapper">
+                <h2>Javascript Data Types:</h2>
+                <p><!--
+                    -->Javascript variables are containers for data values to hold numeric and text values. Following are the types of values that javascript variables can hold.
+                </p>
+                <ol>
+                    <li>Strings</li>
+                    <li>Numbers</li>
+                    <li>Boolean</li>
+                    <li>Arrays</li>
+                    <li>Objectcs</li>
+                </ol>
+                <h2>Javascript Objects:</h2>
+                <p><!--
+                    -->Javascript objects are useful for working with large amount of data.They contain multiple values in form of key:value pair.
+                    A <b>"key:value"</b> pair is called <b>object properties</b>. These properties can be accesed using methods.
+                    Points to remember while creating an object:
+                </p><!--
+                --><ul>
+                    <li>JavaScript objects are written with curly braces "{}". </li>
+                    <li>Properties are separated by commas(",").</li>
+                    <li>While names and values are seperated by <b>colon (":")</b>.</li>
+                </ul>
+                <div id="note">
+                <h3>Note:</h3>
+                <p><!--
+                    -->Do Not Declare Strings, Numbers, and Booleans as Objects!
+                    When a JavaScript variable is declared with the keyword "new", the variable is created as an object:
+                    var x = new String();<!--       -->// Declares x as a String object
+                    var y = new Number();        // Declares y as a Number object 
+                    var z = new Boolean(); //Declares z as boolean object
+                    Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
+                </p>
+                </div>
+                <h3> Object Example:</h3>
+                <p><!--
+                    -->Below example assigns many values (Fiat, 500, white) to a variable named car.
+                </p>
+                <div id="example">
+                    var car = {type:"Fiat", model:"500", color:"white"};
+                </div>
+                <p>
+                    The values are written as <b>name:value</b> pairs <b>i.e.</b> name and value separated by a colon).
+                </p>
+                <h3>Object Properties:</h3>
+                <p><!--
+                    -->The <b>name:value</b> pairs in JavaScript objects are called properties.
+                    You can access object properties in two ways:</p>
+                <p id="access"><!--
+                    -->object Name.property Name
+                    or
+                    object Name["property Name"]</p>
+                <p>
+                <h3>Example</h3>
+                <p id="property"><!--
+                    -->car.type="Fiat"  
+                    or   
+                    car["type"]="Fiat"
+                </p>
+            </div>
+        </main>
+        <!-- Object Methods Section -->
+        <section>
+            <div id="more">
+                <h2>Object Methods</h2>
+                <p><!--
+                    -->Objects can also have methods.
+                    Methods are actions that can be performed on objects. Methods are stored in properties as function definitions.
+                </p>
+                <h3>Accessing Object Methods</h3>
+                <p><!--
+                    -->You access an object method with the following syntax:
+                    objectName.methodName().
+                </p>
+                <h3>Method exmple</h3>
+                <p id="method"><!--
+                    -->var car=
+                    {
+                    type:"Fiat",
+                    model:"500",
+                    color="white",
+                    detail=function ()
+                    {
+                    return car.type+" "car.model+" "+car.color
+                    }
+                    }
+                </p>
+                <p><!--
+                    -->In the above example detail function is created inside a Javascript object.
+                    Functions created inside an object are called Method.
+                </p>
+                <p id="method-example"><!--
+                    -->Now, let's call detail method:
+                car.detail()
+                Following will be the output of the above method:
+                "Fiat 500 white"  
+                </p>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <h3>&copy; Copyright Javascript lessons. All right reserved 2021</h3>
+        </footer>
+    </body>
+</html>
