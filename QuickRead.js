@@ -10,19 +10,19 @@ function execute() {
             switch (this.id) {
                 case "ezbtn":
                     setInterval(easytime, 1000);
-                    files.open("GET", "https://github.com/Ambaram/QuickRead/blob/master/hard2.txt", true);
+                    files.open("GET", https://github.com/Ambaram/QuickRead/blob/master/hard2.txt, true);
                     files.send(null);
                     break;
                 case "mdmbtn":
                     document.getElementById("medcon").style.display = "block";
                     setInterval(mediumtime, 1000);
-                    files.open("GET", "https://github.com/Ambaram/QuickRead/blob/master/med1.txt", true);
+                    files.open("GET", https://github.com/Ambaram/QuickRead/blob/master/med1.txt, true);
                     files.send(null);
                     break;
                 case "hrdbtn":
                     document.getElementById("hardcon").style.display = "block";
                     setInterval(hardtime, 1000);
-                    files.open("GET", "https://github.com/Ambaram/QuickRead/blob/master/hard1.txt", true);
+                    files.open("GET", https://github.com/Ambaram/QuickRead/blob/master/hard1.txt, true);
                     files.send(null);
                     break;
             }
