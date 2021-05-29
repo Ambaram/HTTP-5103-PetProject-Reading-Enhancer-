@@ -2,9 +2,9 @@ window.onload = execute;
 function execute() {
     var article = document.getElementById("Text")
     var elem = document.getElementsByName("level");
-    url1="https://github.com/Ambaram/QuickRead/blob/master/hard2.txt";
-    url2="https://github.com/Ambaram/QuickRead/blob/master/hard1.txt";
-    url3="https://github.com/Ambaram/QuickRead/blob/master/med1.txt";
+    url1="hard2.txt";
+    url2="hard1.txt";
+    url3="med1.txt";
 
     for (i = 0; i < elem.length; i++) {
         elem[i].onclick = display;
