@@ -14,19 +14,19 @@ function execute() {
             switch (this.id) {
                 case "ezbtn":
                     setInterval(easytime, 1000);
-                    files.open("GET", url1, true);
+                    files.open("GET", "url1", true);
                     files.send(null);
                     break;
                 case "mdmbtn":
                     document.getElementById("medcon").style.display = "block";
                     setInterval(mediumtime, 1000);
-                    files.open("GET", url2, true);
+                    files.open("GET", "url2", true);
                     files.send(null);
                     break;
                 case "hrdbtn":
                     document.getElementById("hardcon").style.display = "block";
                     setInterval(hardtime, 1000);
-                    files.open("GET", url3, true);
+                    files.open("GET", "url3", true);
                     files.send(null);
                     break;
             }
