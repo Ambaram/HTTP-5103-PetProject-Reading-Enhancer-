@@ -60,6 +60,9 @@ button:hover{
     header{
         font:bold 1.5em 'Lato',sans-serif;
     }
+    button {
+    font-size:1.25em
+    }
     h2 {
      font:bold 1.5em 'Avenir',sans-serif;
     }
@@ -70,6 +73,9 @@ button:hover{
 @media screen and (max-width: 540px){
     header{
         font:bold 1em 'Lato',sans-serif;
+    }
+    button {
+    font-size:1em
     }
     h2 {
      font:bold 1em 'Avenir',sans-serif;
