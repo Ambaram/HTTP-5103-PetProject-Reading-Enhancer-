@@ -57,10 +57,17 @@ button:hover{
 
 
 @media screen and (max-width: 760px){
-    #text{
-        width:40%;
+    header{
+        font:bold 1.5em 'Lato',sans-serif;
+    }
+    #next{
+        width:20%;
 }
 @media screen and (max-width: 540px){
-    #text{
-        width:30%;
+    header{
+        font:bold 1em 'Lato',sans-serif;
+    }
+    #next{
+        width:20%
+    }
 }
