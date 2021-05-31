@@ -2,32 +2,45 @@ window.onload = execute;
 function execute() {
     var article = document.getElementById("Text")
     var elem = document.getElementsByName("level");
-
+    document.getElementById("content").style.display="none";
     for (i = 0; i < elem.length; i++) {
         elem[i].onclick = display;
         function display() {
             var files = new XMLHttpRequest();
+            document.getElementById("difficulty").style.display="none";
+            document.getElementById("content").style.display="block";
             console.log(this.id);
             switch (this.id) {
                 case "ezbtn":
+                    console.assert(this.id==="ezbtn","Easy button");
+                    document.getElementById("mediumtime").style.display="none";
+                    document.getElementById("hardtime").style.display="none";
                     setInterval(easytime, 1000);
-                    files.open("GET", "hard1.txt", true);
+                    files.open("GET", "hard2.txt", true);
                     files.send(null);
                     break;
                 case "mdmbtn":
                     setInterval(mediumtime, 1000);
-                    files.open("GET", "hard2.txt", true);
+                    console.assert(this.id==="ezbtn","Medium button");
+                    document.getElementById("easytime").style.display="none";
+                    document.getElementById("hardtime").style.display="none";
+                    files.open("GET", "med1.txt", true);
                     files.send(null);
                     break;
                 case "hrdbtn":
                     setInterval(hardtime, 1000);
-                    files.open("GET", "med1.txt", true);
+                    console.assert(this.id==="hrdbtn","Hard button");
+                    document.getElementById("mediumtime").style.display="none";
+                    document.getElementById("easytime").style.display="none";
+                    files.open("GET", "hard1.txt", true);
                     files.send(null);
                     break;
             }
             files.onreadystatechange = function () {
+                console.log(files.readyState)
                 if (files.readyState === 4) {
                     if (files.status === 200) {
+                        console.log("file accessed");
                         article.innerHTML = files.responseText;
                     }
                     else {
