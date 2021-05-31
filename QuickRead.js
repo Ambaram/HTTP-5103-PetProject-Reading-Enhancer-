@@ -30,10 +30,8 @@ function execute() {
                     files.send(null);
                     break;
             }
-            document.getElementById("next").onclick = next;
-            files.overrideMimeType("text/html");
             files.onreadystatechange = function () {
-                if (files.readystate === 4) {
+                if (files.readyState === 4) {
                     if (files.status === 200) {
                         article.innerHTML = files.responseText;
                     }
