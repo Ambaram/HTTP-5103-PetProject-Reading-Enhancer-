@@ -7,10 +7,24 @@ body{
 
 header{
     font:bold 2em 'Lato',sans-serif;
-    color: white;
     text-align: center;
     background-color: darkslategrey;
     padding: 1em;
+}
+header a:link{
+    text-decoration: none;
+    color: white;
+}
+header a:active{
+    text-decoration: none;
+    color: white;
+}
+header a:visited{
+    text-decoration: none;
+    color: white;
+}
+header a:hover{
+    color: bisque;
 }
 h2{
     margin:1em;
@@ -18,11 +32,12 @@ h2{
     padding-bottom: 0;
     margin-bottom: 0;
     font:bold 2em 'Avenir',sans-serif;
+    text-decoration: underline;
 }
 .diff{
   border-radius: 1em;
   color:black;
-  width: 30%;
+  width: 20%;
   margin: 0 auto;
   margin-top: 2.5em;
   text-align: center;
@@ -30,57 +45,80 @@ h2{
 }
 
 button{
-    margin: .75em auto;
+    margin:.75em auto;
     margin-top:1em;
-    padding: .75em;
-    font-size: 1.5em;
-    width: 60%;
+    padding: .5em;
+    width: 100%;
     background-color:darkslategrey;
     color: white;
     border-radius: 2em;
     border: none;
+    letter-spacing: 5px;
+    font:bold 2em Georgia, 'Times New Roman', Times, serif;
 }
 
 button:hover{
     color: wheat;
 }
 
-#next{
-    border-radius: 0;
-    width: 10%;
-    padding: .5em 1em;
+#Text{
+    margin: 0 auto;
+    margin-top: 3em;
+    text-align: left;
+    padding: 1em;
+    width: 45%;
+    border: 1px solid; 
+    border: none;
+    font-size: 1em;
+    word-spacing: 4px;
+    background-color: white;
 }
 
-#text{
-    border: 2px solid black;
+#easytime,#mediumtime,#hardtime{
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: .75em;
+    border:2px solid black ;
+    background-color: blanchedalmond;
+    font: bold 1em "Avenir";
+    width: 2.5%;
+    border-radius: 1.5em;
 }
 
-
-@media screen and (max-width: 760px){
-    header{
-        font:bold 1.5em 'Lato',sans-serif;
+@media screen and (max-width:970px){
+    .diff{
+        width: 20%;
     }
-    button {
-    font-size:1.25em
+    button{
+        width: 100%;
+        font-size: 1.5em;
     }
-    h2 {
-     font:bold 1.5em 'Avenir',sans-serif;
+    #Text{
+        width: 70%;
     }
-
-    #next{
-        width:20%;
+    #easytime,#mediumtime,#hardtime{
+        width: 10%;
+    }
 }
-@media screen and (max-width: 540px){
+
+@media screen and (max-width:760px){
     header{
         font:bold 1em 'Lato',sans-serif;
     }
-    button {
-    font-size:1em
+    h2{
+        font-size: 1em;
     }
-    h2 {
-     font:bold 1em 'Avenir',sans-serif;
+    .diff{
+        width: 30%;
     }
-    #next{
-        width:20%
+    button{
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #Text{
+        width: 70%;
+    }
+    #easytime,#mediumtime,#hardtime{
+        width: 10%;
     }
 }
